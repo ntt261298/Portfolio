@@ -45,7 +45,7 @@ a:hover {
 .logo .ntt {
   margin-left: 10px;
 }
-.logo>img {
+.logo>a>img {
   width: 50px;
   height: 50px;
 }
@@ -119,9 +119,42 @@ a:hover {
   width: 100px;
   padding: 5px 5px;
   margin-left: 40%;
-  transition: var(--ease-out);
+  transition: var(--ease-out); 
+}
+.more>a {
+  color: #fff;
 }
 .more:hover {
   background: var(--orange);
   cursor: pointer;
+}
+/* Education Style */
+#education {
+  text-align: center;
+}
+h1 {
+  font-family: Roboto Light;
+  font-size: 50px;
+  margin-bottom: 4px;
+}
+.stroke {
+  width: 200px; 
+  height: 2px;
+  margin: 0 auto;
+  background: var(--primary);
+}
+.slider-item {
+  float: left;
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 250px;
+  font-size: 20px;
+  background: #383838;
+  text-align: center;
+  border-radius: 4px !important;
+  transition: all 0.2s linear;
+}
+.hide {
+  display: none;
 }

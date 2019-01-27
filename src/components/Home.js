@@ -44,7 +44,9 @@ class Home extends Component {
                     <p className="text-2">Web Developer</p>
                     <p className="text-3">Student at Hust</p>
                 </div>
-                <span className="more">More</span>
+                <span className="more">
+                <a href="#education">More</a>
+                </span>
                 <div></div>
                 <div></div>
                 <div></div>

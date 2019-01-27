@@ -5,8 +5,10 @@ class Header extends Component {
     return (
       <div className="header">
         <div className="logo">
+          <a href="#home">
             <img src="./img/logo.svg" alt="logo" />
             <img className="ntt" src="./img/ntt.svg" alt="ntt"/>
+          </a>         
         </div>
         <div className="menu">
             <ul>
