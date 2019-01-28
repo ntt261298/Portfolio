@@ -131,10 +131,12 @@ a:hover {
 /* Education Style */
 #education {
   text-align: center;
-  margin-top: 30px;
+  height: calc(100vh - 100px);
 }
-.edu-header {
+.menu-header {
   height: 80px;
+  text-align: center;
+  margin-top: 20px;
 }
 h1 {
   font-family: Roboto Light;
@@ -181,13 +183,6 @@ h1 {
 .hide {
   display: none;
 }
-/* .panel {
-  margin-top: 100%;
-  -webkit-transition: all .8s ease-in-out;
-  -moz-transition: all .8s ease-in-out;
-  -o-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out;
-} */
 .left-direct {
   z-index: 2;
   position: absolute;
@@ -239,4 +234,200 @@ h1 {
 }
 .active {
   background: #c8c8c8;
+}
+/* Skills Style */
+#skills {
+  height: calc(100vh - 100px);
+  font-family: Roboto;
+  position: relative;
+}
+.skills-header {
+  text-align: center;
+}
+.skill-content {
+  position: relative;
+  background-image: url(./img/debating.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: calc(100vh - 220px);
+  z-index: -2;
+  overflow: hidden;
+  color: #fff;
+}
+.orange-cover {
+  width: 100%;
+  position: absolute;
+  background: var(--orange);
+  height: calc(100vh - 220px);
+  z-index: -1;
+  opacity: 0.85;
+}
+.slide {
+  width: 100%;
+  height: calc(100vh - 220px);
+  float: left;
+  transition: var(--ease-out);
+  margin-top: 20px;
+}
+.skills-menu ul {
+  text-align: center;
+}
+.skills-menu ul li {
+  display: inline;
+  font-family: Roboto;
+  margin: 0 15px;
+  font-weight: bold;
+  color: var(--primary);
+}
+.skills-menu ul li:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+.slide {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'title line right' 
+}
+.title {
+  grid-area: title;
+  text-align: right;
+}
+.title p {
+  margin: 10px 0;
+  height: 26px;
+}
+.line {
+  grid-area: line;
+}
+.right {
+  grid-area: right;
+}
+.form {
+  margin: 10px 0;
+  background:var(--blue);
+  border: 3px solid var(--border-blue);
+  height: 20px;
+}
+.language {
+  text-align: center;
+}
+.language h2 {
+  padding-top: 5%;
+  font-size: 42px;
+}
+.language p:nth-of-type(0) {
+  font-size: 24px;
+}
+.language p:nth-of-type(1) {
+  font-size: 20px;
+}
+.line-node {
+  width: 400px;
+}
+.line-react {
+  width: 500px;
+}
+.line-mongo {
+  width: 380px;
+}
+.line-post {
+  width: 200px;
+}
+.line-git {
+  width: 300px;
+}
+.line-js {
+  width: 500px;
+}
+.line-c {
+  width: 300px;
+}
+.line-java {
+  width: 200px;
+}
+.line-python {
+  width: 150px;
+}
+.line-ai {
+  width: 500px;
+} 
+.line-ps {
+  width: 150px;
+  margin-top: 20px;
+}
+/* Projects Style */
+#projects {
+  height: calc(100vh - 100px);
+}
+.project-list {
+  color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+    'project-1 project-2 project-3'
+}
+.project-list img {
+  width: 100%;
+}
+.project-1 {
+  grid-area: project-1;
+  position: relative;
+}
+.project-2 {
+  grid-area: project-2;
+  position: relative;
+}
+.project-3 {
+  grid-area: project-3;
+  position: relative;
+}
+.project-cover {
+  position: absolute;
+  top: 0;
+  background: var(--orange);
+  width: 100%;
+  z-index: 1;
+  height: calc(100% - 80px);
+  opacity: 0.85;
+  display: none;
+}
+.project-list p {
+  position: absolute;
+  top: 25%;
+  font-family: Roboto;
+  width: 80%;
+  left: 10%;
+  font-size: 20px; 
+  z-index: 2;
+  display: none;
+}
+.project-list a {
+  color: #fff;
+}
+.project-list a i {
+  margin: 0 5px;
+}
+.project-list .demo {
+  background: var(--gray);
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+.project-list .git {
+  margin-top: 5px;
+  background: var(--secondary);
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+.pj-hover:hover .project-cover {
+  display: block;
+}
+.pj-hover:hover p {
+  display: block;
 }

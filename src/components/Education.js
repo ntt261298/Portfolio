@@ -84,8 +84,8 @@ class Education extends Component {
     return (
       <div id="education">
         {/* <div className="fix-header"></div> */}
-        <div className="edu-header">
-          <h1>EDUCATION</h1>
+        <div className="menu-header">
+          <h1>EDUCATION </h1>
           <div className="stroke"></div>
         </div>
         <div className="slide-edu">

@@ -3,8 +3,8 @@ import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import Education from './components/Education';
-// import Skills from './components/Skills';
-// import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
 // import About from './components/About';
 // import Footer from './components/Footer';
 
@@ -15,9 +15,9 @@ class App extends Component {
         <Header />
         <Home />
         <Education />
-        {/* <Skills />
+        <Skills />
         <Projects />
-        <About />
+        {/* <About />
         <Footer /> */}
       </div>
     );
