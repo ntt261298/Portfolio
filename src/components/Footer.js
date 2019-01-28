@@ -1,25 +1,36 @@
 import React, { Component } from 'react';
 
-class Header extends Component {
+class Footer extends Component {
   render() {
     return (
-      <div className="header">
-        <div className="logo">
-            <img src="./img/logo.svg" alt="logo" />
-            <span>NTT</span>
+      <div id="footer">
+        <div className="contact">
+          <div className="phone">
+            <img src="" alt=""/>
+            <p>0397364341</p>
+          </div>
+          <div className="mail"></div>
+            <img src="" alt=""/>
+            <p>ntt261298@gmail.com</p>
+          <div className="location">
+            <img src="" alt=""/>
+            <p>So 7, Ta Quang Buu, Hanoi</p>
+          </div>
         </div>
-        <div className="menu">
-            <ul>
-                <li><a href="#home">HOME <span>|</span></a></li>
-                <li><a href="#education">EDUCATION <span>|</span></a></li>
-                <li><a href="#skills">SKILLS <span>|</span></a></li>
-                <li><a href="#projects">PROJECTS <span>|</span></a></li>
-                <li><a href="#about">ABOUT ME <span>|</span></a></li>
-            </ul>
+        <div className="social">
+          <a href="">
+            <img src="" alt=""/>
+          </a>
+          <a href="">
+            <img src="" alt=""/>
+          </a>
+        </div>
+        <div className="coppyright">
+          &copy; 2019 NTT. All RIGHTS RESERVES.
         </div>
       </div>
     );
   }
 }
 
-export default Header;
+export default Footer;

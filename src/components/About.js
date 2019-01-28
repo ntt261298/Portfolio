@@ -4,19 +4,20 @@ class About extends Component {
   render() {
     return (
       <div id="about">
-        <div className="menu-header">
-          <h1>ABOUT</h1>
-          <div className="stroke"></div>
+        <div className="menu-header" style={{paddingTop: '30px'}}>
+          <h1>ABOUT ME</h1>
+          <div className="stroke" style={{background: '#fff'}}></div>
         </div>
         <div className="about-info">
           <img src="./img/ntt.svg" alt="TruongNT" className="bio-img" />
           <div className="bio">
-            <h3 className="text-secondary">BIO</h3>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
-            praesentium quisquam, aliquam incidunt velit dolor eum excepturi
-            reprehenderit amet dolore impedit accusantium eos ullam eaque quae
-            cupiditate labore nesciunt? Delectus?
+            “My name is Truong. I’m currently a third-year student 
+            at Hanoi University of Science and Technology. My major 
+            is information system belongs to information technology 
+            department. I’m pasionate about Web development, 
+            i want to improve my technical skills everyday and build  
+            useful systems in the future...”
             </p>
           </div>
           <div className="about about1">

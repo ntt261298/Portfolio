@@ -431,3 +431,52 @@ h1 {
 .pj-hover:hover p {
   display: block;
 }
+/* About Style */
+#about {
+  height: calc(100vh - 100px);
+  color: #fff;
+  background: var(--secondary);
+}
+.about-info {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+    'bio-img bio bio'
+    'about1 about2 about3'
+}
+.bio-img {
+  grid-area: bio-img;
+  margin: 0 auto;
+  margin-top: 3%;
+  width: 160px;
+  height: 160px;
+  border: 3px solid var(--orange);
+  border-radius: 50%;
+}
+.bio {
+  grid-area: bio;
+}
+.about1 {
+  grid-area: about1;
+}
+.about2 {
+  grid-area: about2;
+}
+.about3 {
+  grid-area: about3;
+}
+.about-info .bio p{
+  width: 85%;
+  font-size: 20px;
+}
+.about {
+  background: var(--gray);
+  border-top: 1px solid #c8c8c8;
+  border-left: 1px solid #c8c8c8;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 8px solid var(--orange);
+  padding: 0 10px;
+}
