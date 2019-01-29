@@ -66,7 +66,6 @@ class Education extends Component {
   }
 
   render() {
-    const { activeIndex } = this.state;
     const slides = items.map((item, index) => {
       console.log(index);
 
@@ -76,7 +75,7 @@ class Education extends Component {
           className={index === this.state.activeIndex ? 'slider-item' : 'hide'}
         >
           <div className="back" style={{height: 'calc(100vh - 220px)', background: 'var(--primary)'}}></div>
-          <img src={item.img} style={{transition: 'all 1000ms ease-out'}}/>
+          <img src={item.img} style={{transition: 'all 1000ms ease-out'}} alt="item"/>
           <p>{item.content}</p>
         </div>
       );
