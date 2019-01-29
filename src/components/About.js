@@ -9,14 +9,14 @@ class About extends Component {
           <div className="stroke" style={{background: '#fff'}}></div>
         </div>
         <div className="about-info">
-          <img src="./img/ntt.svg" alt="TruongNT" className="bio-img" />
+          <img src="./img/author.jpg" alt="TruongNT" className="bio-img" />
           <div className="bio">
             <p>
-            “My name is Truong. I’m currently a third-year student 
-            at Hanoi University of Science and Technology. My major 
-            is information system belongs to information technology 
-            department. I’m pasionate about Web development, 
-            i want to improve my technical skills everyday and build  
+            “My name is Truong. I’m currently a third-year student
+            at Hanoi University of Science and Technology. My major
+            is information system belongs to information technology
+            department. I’m pasionate about Web development,
+            i want to improve my technical skills everyday and build
             useful systems in the future...”
             </p>
           </div>

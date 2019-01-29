@@ -1,55 +1,113 @@
 import React, { Component } from 'react';
+import Responsive from 'react-responsive-decorator';
 
 class Skills extends Component {
   state = {
     active: 'tech',
-    tech: '10%',
     programLg: '0',
     design: '0',
     lg: '0'
   }
-  viewSkill(type) {
-    switch (type) {
-      case 'tech':
-        this.setState({
-          active: 'tech',
-          tech: '10%',
-          programLg: '0',
-          design: '0',
-          lg: '0'
-        });
-        break;
-      case 'programLg':
-        this.setState({
-          active: 'programLg',
-          tech: '-100%',
-          programLg: '10%',
-          design: '0',
-          lg: '0'
-        });
-        break;
-      case 'design':
-        this.setState({
-          active: 'design',
-          tech: '-100%',
-          programLg: '-100%',
-          design: '13%',
-          lg: '0'
-        });
-        break;
-      case 'lg':
-        this.setState({
-          active: 'lg',
-          tech: '-100%',
-          programLg: '-100%',
-          design: '-100%',
-          lg:'0'
-        });
-        break;
-      default:
-        break;
-    }
+  componentDidMount() {
+    this.props.media({ minWidth: 768 }, () => {
+      this.setState({
+        tech: '95px'
+      });
+    });
+    this.props.media({ maxWidth: 768 }, () => {
+      this.setState({
+        tech: '45px'
+      });
+    });
   }
+  viewSkill(type) {
+    this.props.media({ minWidth: 768 }, () => {
+      switch (type) {
+        case 'tech':
+          this.setState({
+            active: 'tech',
+            tech: '95px',
+            programLg: '0',
+            design: '0',
+            lg: '0'
+          });
+          break;
+        case 'programLg':
+          this.setState({
+            active: 'programLg',
+            tech: '-100%',
+            programLg: '100px',
+            design: '0',
+            lg: '0'
+          });
+          break;
+        case 'design':
+          this.setState({
+            active: 'design',
+            tech: '-100%',
+            programLg: '-100%',
+            design: '120px',
+            lg: '0'
+          });
+          break;
+        case 'lg':
+          this.setState({
+            active: 'lg',
+            tech: '-100%',
+            programLg: '-100%',
+            design: '-100%',
+            lg:'0'
+          });
+          break;
+        default:
+          break;
+      }
+      });
+
+    this.props.media({ maxWidth: 768 }, () => {
+      switch (type) {
+        case 'tech':
+          this.setState({
+            active: 'tech',
+            tech: '45px',
+            programLg: '0',
+            design: '0',
+            lg: '0'
+          });
+          break;
+        case 'programLg':
+          this.setState({
+            active: 'programLg',
+            tech: '-100%',
+            programLg: '50px',
+            design: '0',
+            lg: '0'
+          });
+          break;
+        case 'design':
+          this.setState({
+            active: 'design',
+            tech: '-100%',
+            programLg: '-100%',
+            design: '80px',
+            lg: '0'
+          });
+          break;
+        case 'lg':
+          this.setState({
+            active: 'lg',
+            tech: '-100%',
+            programLg: '-100%',
+            design: '-100%',
+            lg:'0'
+          });
+          break;
+        default:
+          break;
+      }
+      });
+  }
+
 
   render() {
     const activeStyle = { color: 'var(--orange)' };
@@ -112,21 +170,21 @@ class Skills extends Component {
         </div>
         <div className="skills-menu">
           <ul>
-            <li 
+            <li
             onClick={this.viewSkill.bind(this, 'tech')}
-            style={this.state.active === 'tech' ? activeStyle : {}} 
+            style={this.state.active === 'tech' ? activeStyle : {}}
             >Tech</li>
-            <li 
+            <li
             onClick={this.viewSkill.bind(this, 'programLg')}
-            style={this.state.active === 'programLg' ? activeStyle : {}} 
+            style={this.state.active === 'programLg' ? activeStyle : {}}
             >Programing Language</li>
-            <li 
+            <li
             onClick={this.viewSkill.bind(this, 'design')}
-            style={this.state.active === 'design' ? activeStyle : {}} 
+            style={this.state.active === 'design' ? activeStyle : {}}
             >Design</li>
-            <li 
+            <li
             onClick={this.viewSkill.bind(this, 'lg')}
-            style={this.state.active === 'lg' ? activeStyle : {}} 
+            style={this.state.active === 'lg' ? activeStyle : {}}
             >Language</li>
           </ul>
         </div>
@@ -135,4 +193,4 @@ class Skills extends Component {
   }
 }
 
-export default Skills;
+export default Responsive(Skills);

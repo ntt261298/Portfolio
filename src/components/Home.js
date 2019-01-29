@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Responsive from 'react-responsive-decorator';
 
 class Home extends Component {
   state = {
       margin: 0
   }
   componentDidMount() {
+    this.props.media({ minWidth: 768 }, () => {
       this.interval = setInterval(() => {
         if(this.state.margin === -70) {
             this.setState({
@@ -22,6 +24,26 @@ class Home extends Component {
           });
         }
     }, 2500);
+    });
+    this.props.media({ maxWidth: 768 }, () => {
+      this.interval = setInterval(() => {
+        if(this.state.margin === -30) {
+            this.setState({
+                margin: -60
+            });
+        }
+        else if(this.state.margin === -60) {
+          this.setState({
+              margin: 0
+          });
+        }
+        else {
+          this.setState({
+              margin: -30
+          });
+        }
+    }, 3000);
+    });
   }
   componentWillUnmount() {
     clearInterval(this.interval);
@@ -33,7 +55,7 @@ class Home extends Component {
         <div className="fix-header"></div>
         <div className="bg-img"></div>
         <div className="back">
-            
+
         </div>
         <div className="home-content">
                 <div></div>
@@ -50,10 +72,10 @@ class Home extends Component {
                 <div></div>
                 <div></div>
                 <div></div>
-            </div>      
+            </div>
       </div>
     );
   }
 }
 
-export default Home;
+export default Responsive(Home);

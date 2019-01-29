@@ -6,23 +6,24 @@ class Footer extends Component {
       <div id="footer">
         <div className="contact">
           <div className="phone">
-            <img src="" alt=""/>
+            <i className="fa fa-phone" aria-hidden="true"></i>
             <p>0397364341</p>
           </div>
-          <div className="mail"></div>
-            <img src="" alt=""/>
+          <div className="mail">
+            <i className="fa fa-envelope" aria-hidden="true"></i>
             <p>ntt261298@gmail.com</p>
+          </div>
           <div className="location">
-            <img src="" alt=""/>
+            <i className="fa fa-map-marker" aria-hidden="true"></i>
             <p>So 7, Ta Quang Buu, Hanoi</p>
           </div>
         </div>
         <div className="social">
-          <a href="">
-            <img src="" alt=""/>
+          <a href="https://www.facebook.com/nguyentien.truong.5220" target="_blank">
+            <img src="img/facebook-logo-in-circular-button-outlined-social-symbol.svg" alt="fb"/>
           </a>
-          <a href="">
-            <img src="" alt=""/>
+          <a href="https://github.com/ntt261298" target="_blank">
+            <img src="img/github.svg" alt="gh"/>
           </a>
         </div>
         <div className="coppyright">
