@@ -21,6 +21,12 @@ a {
 a:hover {
   color: var(--orange);
 }
+.panel {
+  -webkit-transition: all .8s ease-out;
+  -moz-transition: all .8s ease-out;
+  -o-transition: all .8s ease-out;
+  transition-delay: 1s;
+}
 /* Header Style */
 .header {
   z-index: 10;

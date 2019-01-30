@@ -33,18 +33,18 @@ class Projects extends Component {
             </div>
           </div>
           <div className="project-2">
-            <a href="https://ntt261298.herokuapp.com" target="_blank" className="pj-hover">
+            <a href="https://intense-temple-58166.herokuapp.com/" target="_blank" className="pj-hover">
               <img src="img/book-store.jpg" style={{height: 'calc(100% - 80px)'}} alt="book store"/>
               <p>
-              I and my assignment group member designed 
+              I and my assignment group member designed
               and coded a whole book store app. I spent
-              most of my last semester time on it, so 
+              most of my last semester time on it, so
               check it out,..
               </p>
               <div className="project-cover"></div>
-            </a>    
+            </a>
             <div className="demo">
-             <a href="https://ntt261298.herokuapp.com" target="_blank">
+             <a href="https://intense-temple-58166.herokuapp.com/" target="_blank">
                 <i class="fa fa-eye"></i>
                  Book Store React-Redux
              </a>
@@ -57,7 +57,7 @@ class Projects extends Component {
             </div>
           </div>
           <div className="project-3">
-            <a href="https://ntt261298.herokuapp.com" target="_blank" className="pj-hover">
+            <a href="https://thyroid-diagnose.herokuapp.com/" target="_blank" className="pj-hover">
               <img src="img/diagnose.jpg" alt="chat app"/>
               <p>
               Training Keras model for medical diagnosis and bringing it
@@ -67,7 +67,7 @@ class Projects extends Component {
             <div className="project-cover"></div>
             </a>        
             <div className="demo">
-             <a href="https://ntt261298.herokuapp.com" target="_blank">
+             <a href="https://thyroid-diagnose.herokuapp.com/" target="_blank">
                 <i class="fa fa-eye"></i>
                  Thyroid Diagnose Nodejs-Flask
              </a>
