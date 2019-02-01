@@ -10,6 +10,7 @@
 html {
   box-sizing: border-box;
   font-family: Roboto;
+  scroll-behavior: smooth;
 }
 body {
   z-index: -1;
@@ -20,12 +21,6 @@ a {
 }
 a:hover {
   color: var(--orange);
-}
-.panel {
-  -webkit-transition: all .8s ease-out;
-  -moz-transition: all .8s ease-out;
-  -o-transition: all .8s ease-out;
-  transition-delay: 1s;
 }
 /* Header Style */
 .header {
@@ -76,7 +71,7 @@ a:hover {
 #home {
   position: relative;
   color: #fff;
-  height: 100vh;
+  min-height: 100vh;
 }
 .fix-header {
   width: 100%;
@@ -135,10 +130,6 @@ a:hover {
   cursor: pointer;
 }
 /* Education Style */
-#education {
-  text-align: center;
-  height: calc(100vh - 100px);
-}
 .menu-header {
   height: 80px;
   text-align: center;
@@ -401,7 +392,7 @@ h1 {
 }
 .project-list p {
   position: absolute;
-  top: 25%;
+  top: 20%;
   font-family: Roboto;
   width: 80%;
   left: 10%;
@@ -438,6 +429,7 @@ h1 {
 #about {
   color: #fff;
   background: var(--secondary);
+  padding-bottom: 20px;
 }
 .about-info {
   width: 90%;
@@ -779,4 +771,47 @@ h1 {
       padding: 15px 0;
       font-size: 14px;
     }
+}
+/* Animate Style */
+.ae-animation-hatch {
+  -webkit-animation-name: ae-animation-hatch;
+	-moz-animation-name: ae-animation-hatch;
+	-o-animation-name: ae-animation-hatch;
+	animation-name: ae-animation-hatch;
+
+	-webkit-animation-duration:1.6s;
+	-moz-animation-duration:1.6s;
+	-ms-animation-duration:1.6s;
+	-o-animation-duration:1.6s;
+	animation-duration:1.6s;
+
+	opacity: 1!important;
+}
+@keyframes ae-animation-hatch {
+	0% {transform: rotate(0deg) scaleY(0);}
+	20% {transform: rotate(-2deg) scaleY(1.05);}
+	35% {transform: rotate(2deg) scaleY(1);}
+	50% {transform: rotate(-2deg);}
+	65% {transform: rotate(1deg);}
+	80% {transform: rotate(-1deg);}	
+	100% {transform: rotate(0deg);}
+}
+.hatch {opacity: 0;}
+html.ie9 .hatch { opacity: 1!important; }
+.animated {
+	-webkit-animation-fill-mode:both;
+	-moz-animation-fill-mode:both;
+	-ms-animation-fill-mode:both;
+	-o-animation-fill-mode:both;
+	animation-fill-mode:both;
+
+	-webkit-animation-delay: .3s;
+	-moz-animation-delay: .3s;
+	animation-delay: .3s;
+}
+.panel {
+  -webkit-transition: all .8s ease-out;
+  -moz-transition: all .8s ease-out;
+  -o-transition: all .8s ease-out;
+  transition: all .8s ease-out;
 }

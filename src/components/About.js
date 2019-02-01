@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class About extends Component {
   render() {
     return (
-      <div id="about">
+      <section id="about" className="panel">
         <div className="menu-header" style={{paddingTop: '30px'}}>
           <h1>ABOUT ME</h1>
           <div className="stroke" style={{background: '#fff'}}></div>
@@ -21,34 +21,34 @@ class About extends Component {
             </p>
           </div>
           <div className="about about1">
-            <h3>123 Webshop</h3>
+            <h3>Passion</h3>
             <h6>Full Stack Developer</h6>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-            cupiditate molestiae illo accusamus doloremque saepe similique
-            possimus quod aspernatur illum.
+            My passion is to work with extremely talented people and 
+            collaborate to make products that would make an immediate 
+            impact 
             </p>
           </div>
           <div className="about about2">
-            <h3>Design ABC</h3>
+            <h3>Seft-taught</h3>
             <h6>Front End Developer</h6>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-            cupiditate molestiae illo accusamus doloremque saepe similique
-            possimus quod aspernatur illum.
+            I'm a seft-taught person. I'm not hesitant to learn a new
+            technology as long as it helps me to solve my problem, to 
+            achieve my purpose
             </p>
           </div>
           <div className="about about3">
-            <h3>Samsung</h3>
+            <h3>Creative</h3>
             <h6>Graphic Designer</h6>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-            cupiditate molestiae illo accusamus doloremque saepe similique
-            possimus quod aspernatur illum.
+            Design is pretty fascinating to me. I've learnt a little bit 
+            about that and this portfolio i designed my seft using Adobe
+            Illustrator
             </p>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

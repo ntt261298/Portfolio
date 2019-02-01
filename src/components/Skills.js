@@ -112,7 +112,7 @@ class Skills extends Component {
   render() {
     const activeStyle = { color: 'var(--orange)' };
     return (
-      <div id="skills" className="panel" style={{transition: 'var(--ease-out)'}}>
+      <section id="skills" className="panel" style={{transition: 'var(--ease-out)'}}>
         <div className="menu-header">
           <h1>SKILLS</h1>
           <div className="stroke"></div>
@@ -188,7 +188,7 @@ class Skills extends Component {
             >Language</li>
           </ul>
         </div>
-      </div>
+      </section>
     );
   }
 }

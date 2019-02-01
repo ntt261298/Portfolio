@@ -4,7 +4,7 @@ class Footer extends Component {
   render() {
     return (
       <div id="footer">
-        <div className="contact">
+        <div className="contact animated hatch ae-animation-hatch">
           <div className="phone">
             <i className="fa fa-phone" aria-hidden="true"></i>
             <p>0397364341</p>

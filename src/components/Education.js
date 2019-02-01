@@ -81,7 +81,7 @@ class Education extends Component {
       );
     });
     return (
-      <div id="education">
+      <section id="education">
         {/* <div className="fix-header"></div> */}
         <div className="menu-header">
           <h1>EDUCATION </h1>
@@ -99,7 +99,7 @@ class Education extends Component {
           <div className={`circle circle-2 ${this.state.active2}`} onClick={this.goToIndex.bind(this, 1)}></div>
           <div className={`circle circle-3 ${this.state.active3}`} onClick={this.goToIndex.bind(this, 2)}></div>
         </div>
-      </div>
+      </section>
     );
   }
 }

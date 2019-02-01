@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Projects extends Component {
   render() {
     return (
-      <div id="projects">
+      <section id="projects">
         <div className="menu-header">
           <h1>PROJECTS</h1>
           <div className="stroke"></div>
@@ -50,7 +50,7 @@ class Projects extends Component {
              </a>
             </div>
             <div className="git">
-              <a href="https://github.com/ntt261298/Chat_Application" target="_blank">
+              <a href="https://github.com/ntt261298/Web_ban_sach" target="_blank">
                 <i class="fab fa-github"></i>
                  Github
               </a>
@@ -73,14 +73,14 @@ class Projects extends Component {
              </a>
             </div>
             <div className="git">
-              <a href="https://github.com/ntt261298/Chat_Application" target="_blank">
+              <a href="https://github.com/ntt261298/Thyroid-Predicter" target="_blank">
                 <i class="fab fa-github"></i>
                  Github
               </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }
